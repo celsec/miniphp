@@ -2,7 +2,7 @@ FROM alpine:3.14
 
 RUN apk add --update \
 		lighttpd \
-		php7-fpm php7-session php7-dom php7-pdo_mysql \
+		php7-fpm php7-session php7-dom php7-pdo_mysql php7-curl \
 		runit \
 	&& rm -rf /var/cache/apk/*
 
